@@ -1,3 +1,13 @@
+@-moz-document url-prefix() {
+    html, body{
+        height: auto !important;
+    }
+
+    header {
+        padding: 50px;
+    }
+}
+
 html, body {
     height: 100%;
     width: 100%;
