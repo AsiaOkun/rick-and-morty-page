@@ -7,10 +7,8 @@ export class CharactersView extends View {
         this.createCharacters(characters);
     }
   
-    // charactersDetailsMap = new Map();
   
     createCharacters(characters) {
-        console.log(characters);
         const characterElements = characters.map(character => {
         const characterView = new CharacterView(character);
         return characterView.element;
