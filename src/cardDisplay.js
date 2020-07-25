@@ -10,14 +10,14 @@ function trackScroll() {
 
 function hideCards() {
     let lastCards = document.querySelectorAll('.character');
-    for (let i = 10; i < 20; i++){
+    for (let i = 10; i < document.querySelector('.characters').childElementCount; i++){
         lastCards[i].style.display = 'none';
     }
 }
 
 function showElements() {
     let lastCards = document.querySelectorAll('.character');
-    for (let i = 10; i < 20; i++){
+    for (let i = 10; i < document.querySelector('.characters').childElementCount; i++){
         lastCards[i].style.display = '';
     }
 }
