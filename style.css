@@ -1,0 +1,114 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    height: 20%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    height: 30px;
+    background-color: #ffffff;
+    border: 2px solid #b7d8eb;;
+    border-radius: 20px;
+    cursor: pointer;
+    line-height: 1px;
+}
+
+button:hover {
+    border: 2px solid #b7d8eb;
+    background-color: #b7d8eb;
+    transition: 0.5s;
+}
+
+.characters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    flex-wrap: wrap;
+    padding: 0 15px;
+    height: 100%;
+    max-width: 840px;
+}
+
+.character {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 5px;
+    transition: .3s;
+}
+
+.character:hover {
+    box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+}
+
+/* .character-image {
+    height: 50px;
+} */
+
+.name {
+    align-self: center;
+    font-size: 21px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.episode {
+    max-width: 300px;
+    min-height: 98px;
+}
+
+.episode::before{
+    content: "Episodes: ";
+    font-weight: bold;
+}
+
+.character * {
+    padding: 5px 0px;
+}
+
+.location::before {
+    content: "Last location: ";
+    font-weight: bold;
+}
+
+.date::before {
+    content: "Created: ";
+    font-weight: bold;
+}
+
+.species::before {
+    content: "Species: ";
+    font-weight: bold;
+}

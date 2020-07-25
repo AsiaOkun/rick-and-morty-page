@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <title>Rick and Morty</title>
+</head>
+<body>
+    <header>
+        <div class="filter">
+            <span>Sort by episodes</span>
+            <div class="buttons">
+                <button id="sort-ep-asc">Ascending</button>
+                <button id="sort-ep-desc">Descending</button>
+            </div>
+        </div>
+        <div class="filter">
+            <span>Sort by date</span>
+            <div class="buttons">
+                <button id="sort-date-asc">Ascending</button>
+                <button id="sort-date-desc">Descending</button>
+            </div>
+        </div>
+        <div class="filter">
+            <span>Displaying</span>
+            <div class="buttons">
+                <button id="display">Only 10 cards</button>
+            </div>
+        </div>
+    </header>
+    <div id="root">
+    </div>
+    <script src="dist/bundle.js"></script>
+</body>
+</html>
