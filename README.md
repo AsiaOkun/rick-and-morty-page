@@ -1,5 +1,5 @@
 Instalation
 ----
-1. ```npm instal```
+1. ```npm install```
 2. ```npm run build```
 3. open index.html
