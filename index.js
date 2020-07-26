@@ -25,7 +25,9 @@ document.addEventListener("click", function(event) {
     if(event.target.matches('button.delete')) {
         const cardID = event.target.className.split(' ')[0];
         this.querySelector('.character.'+cardID).remove();
-        this.querySelector("[style='display: none;']").style.display = '';
+        if (this.querySelector("[style='display: none;']") !== null){
+            this.querySelector("[style='display: none;']").style.display = '';
+        }
     }
 });
 
