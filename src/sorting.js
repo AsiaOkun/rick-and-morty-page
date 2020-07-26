@@ -47,8 +47,8 @@ function sortByEpisodesDesc() {
 function sortByDateAsc() {
     let items = document.querySelector('.characters');
     for (let i = 0; i < items.children.length - 1; i++) {
-        let date1 = new Date(items.children[i].querySelector('.date').textContent.replace(" ", "T"));
         for (let j = i; j < items.children.length; j++) {
+            let date1 = new Date(items.children[i].querySelector('.date').textContent.replace(" ", "T"));
             let date2 = new Date(items.children[j].querySelector('.date').textContent.replace(" ", "T"));
             if (date1 > date2) {
                 let replacedNode = items.replaceChild(items.children[j], items.children[i]);
@@ -62,8 +62,8 @@ function sortByDateAsc() {
 function sortByDateDesc() {
     let items = document.querySelector('.characters');
     for (let i = 0; i < items.children.length - 1; i++) {
-        let date1 = new Date(items.children[i].querySelector('.date').textContent.replace(" ", "T"));
         for (let j = i; j < items.children.length; j++) {
+            let date1 = new Date(items.children[i].querySelector('.date').textContent.replace(" ", "T"));
             let date2 = new Date(items.children[j].querySelector('.date').textContent.replace(" ", "T"));
             if (date1 < date2) {
                 let replacedNode = items.replaceChild(items.children[j], items.children[i]);
