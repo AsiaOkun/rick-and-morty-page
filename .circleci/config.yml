@@ -1,15 +1,7 @@
 version: 2.1
 orbs:
-  node: circleci/node@3.0.0
-# Define the jobs we want to run for this project
-jobs:
-  build:
-    steps:
-      - checkout
-      - run: npm install
-      - run: npm run build
-
+  node: circleci/node@12.18.3
 workflows:
-  build:
+  node-tests:
     jobs:
-      - build
+      - node/test
